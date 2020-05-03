@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brainfuck Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
+  <script src="https://kit.fontawesome.com/386ab7c1fb.js" crossorigin="anonymous"></script>
+  <script defer src="main.dart.js"></script>
+</head>
+
+<body>
+  <div class="landing">
+    <div class="container">
+      <div class="box visualizer-box">
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+        <span class="case">0</span>
+      </div>
+
+      <div class="box code-box">
+        <nav>
+          <div class="buttons">
+            <div class="btn red"></div>
+            <div class="btn yellow"></div>
+            <div class="btn green"></div>
+          </div>
+          <div class="buttons">
+            <i id="run" class="fas fa-play"></i>
+            <i id="pause" class="fas fa-pause hidden"></i>
+            <i id="step" class="fas fa-step-forward"></i>
+            <i id="stop" class="fas fa-stop hidden"></i>
+          </div>
+        </nav>
+        <textarea placeholder="Write your Brainfuck Code here!"
+          id="input-code">Basic Hello World ! program 
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.</textarea>
+        <div id="preview" class="hidden code-preview"></div>
+      </div>
+
+      <div class="box input-box hidden">
+        <input placeholder="> Enter your character" minlength="1" maxlength="1" type="text" id="input">
+        <i id="input-submit" class="fas fa-paper-plane"></i>
+      </div>
+
+      <div class="box output-box">
+        <span>Output</span>
+        <hr>
+        <span id="output"></span>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
