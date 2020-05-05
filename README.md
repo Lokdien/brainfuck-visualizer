@@ -1,6 +1,7 @@
 <h1>Brainfuck Visualizer</h1>
 <h2 style="font-weight: bold;">About</h2>
 <p>This project is a interpreter / visualizer built in <strong>Dart</strong> of the  esoteric programming language, brainfuck.</p>
+<a href="https://brainfuck-visualizer.netlify.app/">Go on website</a>
 <h2 style="font-weight: bold;">What is brainfuck ?</h2>
 <p>Brainfuck is an esoteric programming language created in 1993 by Urban Müller, and is notable for its extreme minimalism.
 
