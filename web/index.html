@@ -82,6 +82,65 @@
     </div>
   </div>
 
+  <section class="usage">
+    <div class="container">
+      <h1>HOW TO USE</h1>
+      <blockquote><code>+</code> increment (increase by one) the byte at the data pointer.</blockquote>
+      <blockquote><code>-</code> decrement (decrease by one) the byte at the data pointer.</blockquote>
+      <blockquote><code>></code> increment the data pointer (to point to the next cell to the right).</blockquote>
+      <blockquote>
+        <code>
+          <</code> decrement the data pointer (to point to the next cell to the left).</blockquote> <blockquote>
+            <code>,</code> accept
+            one
+            byte of input, storing its value in the byte at the data pointer.
+      </blockquote>
+      <blockquote><code>.</code> output the byte at the data pointer.</blockquote>
+      <blockquote><code>[</code> if the byte at the data pointer is zero, then instead of moving the instruction pointer
+        forward to
+        the next command, jump it forward to the command after the matching ] command.</blockquote>
+      <blockquote><code>[</code> if the byte at the data pointer is nonzero, then instead of moving the instruction
+        pointer forward
+        to the next command, jump it back to the command after the matching [ command.
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="examples">
+    <div class="container">
+      <h1>Examples</h1>
+      <ul>
+        <li>
+          <span class="title">Hello World!</span>
+          <p class="description">Display "Hello World!"</p>
+          <div class="code-preview">
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.
+          </div>
+        </li>
+        <li>
+          <span class="title">Fibonacci Sequence</span>
+          <p class="description">Display the Fibonacci sequence</p>
+          <div class="code-preview">
++>+>,-[-[->+<]<<[->>>>+>+<<<<<]>[->>>>>+>+<<<<<<]>>>[-<<<<+>>>>]>[-<<<+>>>]>[-<<<<<+>>>>>]>[-<<<<<+>>>>>]<<<<]
+          </div>
+        </li>
+        <li>
+          <span class="title">Squares</span>
+          <p class="description">Outputs square numbers from 0 to 10000</p>
+          <div class="code-preview">
+++++[>+++++<-]>[<+++++>-]+<+[>[>+>+<<-]++>>[<<+>>-]>>>[-]++>[-]+>>>+[[-]++++++>>>]<<<[[<++++++++<++>>-]+<.<[>----<-]<]<<[>>>>>[>>>[-]+++++++++<[>-<-]+++++++++>[-[<->-]+[<<<]]<[>+<-]>]<<-]<<-]
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <a href="https://github.com/Lokdien/brainfuck-visualizer"><i class="fa fa-github"></i> Fork on Github</a>
+    </div>
+  </footer>
+
 </body>
 
 </html>
