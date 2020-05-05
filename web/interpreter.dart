@@ -142,7 +142,7 @@ class BrainfuckInterpreter {
 
     while (_codeIndex < code.length) {
       if (_pause) return;
-      await Future.delayed(Duration(milliseconds: 100));
+      await Future.delayed(Duration(milliseconds: 25));
       stepForward(code);
     }
   }
