@@ -10,11 +10,11 @@ The language consists of only eight simple commands and an instruction pointer. 
 
 <h3 style="font-weight: bold;">Symbols</h3>
 <blockquote><code>+</code> increment (increase by one) the byte at the data pointer.</blockquote>
-<blockquote>- decrement (decrease by one) the byte at the data pointer.</blockquote>
-<blockquote>> increment the data pointer (to point to the next cell to the right).</blockquote>
-<blockquote>< decrement the data pointer (to point to the next cell to the left).</blockquote>
-<blockquote>, accept one byte of input, storing its value in the byte at the data pointer.</blockquote>
-<blockquote>. output the byte at the data pointer.</blockquote>
-<blockquote>[ if the byte at the data pointer is zero, then instead of moving the instruction pointer forward to the next command, jump it forward to the command after the matching ] command.</blockquote>
-<blockquote>[ if the byte at the data pointer is nonzero, then instead of moving the instruction pointer forward to the next command, jump it back to the command after the matching [ command.
+<blockquote><code>-</code> decrement (decrease by one) the byte at the data pointer.</blockquote>
+<blockquote><code>></code> increment the data pointer (to point to the next cell to the right).</blockquote>
+<blockquote><code><</code> decrement the data pointer (to point to the next cell to the left).</blockquote>
+<blockquote><code>,</code> accept one byte of input, storing its value in the byte at the data pointer.</blockquote>
+<blockquote><code>.</code> output the byte at the data pointer.</blockquote>
+<blockquote><code>[</code> if the byte at the data pointer is zero, then instead of moving the instruction pointer forward to the next command, jump it forward to the command after the matching <code>]</code> command.</blockquote>
+<blockquote><code>[</code> if the byte at the data pointer is nonzero, then instead of moving the instruction pointer forward to the next command, jump it back to the command after the matching <code>[</code> command.
 </blockquote>
